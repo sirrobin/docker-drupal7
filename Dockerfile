@@ -3,10 +3,10 @@ MAINTAINER Andy Woods
 
 # Set up environment
 ENV HOME /root
-ENV APACHE_SERVERADMIN=admin@localhost
-ENV APACHE_SERVERNAME=localhost
-ENV APACHE_SERVERALIAS=docker.localhost
-ENV APACHE_DOCUMENTROOT=/var/www
+ENV APACHE_SERVERADMIN admin@localhost
+ENV APACHE_SERVERNAME localhost
+ENV APACHE_SERVERALIAS docker.localhost
+ENV APACHE_DOCUMENTROOT /var/www
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
