@@ -32,7 +32,7 @@ ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Add services.
 ADD apache2.sh /etc/service/apache2/run
-
+RUN chmod +x /etc/service/apache2/run
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
