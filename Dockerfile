@@ -11,6 +11,8 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 RUN echo %sudo	ALL=NOPASSWD: ALL >> /etc/sudoers
+RUN rm -f /etc/service/sshd/down
+RUN /usr/sbin/enable_insecure_key
 
 # Install packages.
 RUN apt-get update
